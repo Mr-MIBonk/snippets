@@ -1,6 +1,11 @@
+#NOT FOR COMMERCIAL USE - IF YOU BOUGHT THIS YOU GOT RIPPED OFF
+# lzss_A0_decompress.py
+# V 1.0.0 2023-07-23 by MIBonk
+
+import sys
 import argparse
 from pathlib import Path
-import struct
+import zlib
 
 def bits(byte):
     return (
@@ -54,16 +59,27 @@ def decompress_raw_lzss10(indata):
     return data
 
 def main():
+
+    if len(sys.argv) < 2:
+        print("Usage: python lzss_A0_decompress.py <input_filename>")
+        sys.exit(1)
+        
     parser = argparse.ArgumentParser(description="Decompress an LZSS A0 compressed file.")
     parser.add_argument("input_file", type=str, help="Input file path")
-    parser.add_argument("output_file", type=str, help="Output file path")
     args = parser.parse_args()
 
     input_data = Path(args.input_file).read_bytes()
     decompressed_data = decompress_raw_lzss10(input_data)
 
-    with open(args.output_file, 'wb') as file:
+    crc32_value = zlib.crc32(decompressed_data) & 0xFFFFFFFF
+
+    input_path = Path(args.input_file)
+    output_file = f"{input_path.stem}_{crc32_value:08X}_decompressed{input_path.suffix}"
+
+    with open(output_file, 'wb') as file:
         file.write(decompressed_data)
+
+    print(f"Decompressed file saved as: {output_file}")
 
 if __name__ == "__main__":
     main()

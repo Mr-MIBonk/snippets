@@ -1,3 +1,7 @@
+#NOT FOR COMMERCIAL USE - IF YOU BOUGHT THIS YOU GOT RIPPED OFF
+# ISO-TP_Decoder.py
+# V 1.0.0 2023-07-23 by MIBonk
+
 import sys
 import os
 
@@ -149,7 +153,7 @@ def convert_new_format_to_old(input_filename, output_filename):
 def main():
     """Hauptfunktion des Skripts."""
     if len(sys.argv) < 2:
-        print("Usage: python script.py <input_filename> [-o]")
+        print("Usage: python ISO-TP_Decoder.py <input_filename> [-o --for no delete transfile output]")
         sys.exit(1)
 
     input_file = sys.argv[1]
