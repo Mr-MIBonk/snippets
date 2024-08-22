@@ -1,6 +1,6 @@
 #NOT FOR COMMERCIAL USE - IF YOU BOUGHT THIS YOU GOT RIPPED OFF
 # ISO-TP_Decoder.py
-# V 1.0.0 2023-07-23 by MIBonk
+# V 1.0.0 2024-08-21 by MIBonk
 
 import sys
 import os
