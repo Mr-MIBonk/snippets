@@ -154,6 +154,7 @@ def main():
     """Hauptfunktion des Skripts."""
     if len(sys.argv) < 2:
         print("Usage: python ISO-TP_Decoder.py <input_filename> [-o --for no delete transfile output]")
+        input("\nPress Enter to continue...")
         sys.exit(1)
 
     input_file = sys.argv[1]
@@ -194,6 +195,7 @@ def main():
         if not keep_temp_file and os.path.exists(output_file):
             os.remove(output_file)
             print(f"Die temporäre Datei '{output_file}' wurde gelöscht.")
+            input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     main()

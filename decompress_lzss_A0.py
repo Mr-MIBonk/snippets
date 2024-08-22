@@ -61,7 +61,8 @@ def decompress_raw_lzss10(indata):
 def main():
 
     if len(sys.argv) < 2:
-        print("Usage: python lzss_A0_decompress.py <input_filename>")
+        print("\nUsage: python decompress_lzss_A0.py <input_filename>")
+        input("\nPress Enter to continue...")
         sys.exit(1)
         
     parser = argparse.ArgumentParser(description="Decompress an LZSS A0 compressed file.")
@@ -79,7 +80,9 @@ def main():
     with open(output_file, 'wb') as file:
         file.write(decompressed_data)
 
-    print(f"Decompressed file saved as: {output_file}")
-
+    print(f"\nDecompressed file saved as: {output_file}")
+    
+    input("\nPress Enter to continue...")
+    
 if __name__ == "__main__":
     main()
