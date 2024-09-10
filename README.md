@@ -1,7 +1,5 @@
 # I build me some usefull Python files for analysis and reengineering!
 
-- decompress_lzss_A0.py - to unpack A0 compressed binary's
-  
 - ISO-TP_Decoder.py - to parse CAN Logs from PEAK Can .trc files into better readable ISO-TP format
 
 - RSA_1024_3.py - generate some RSA1024 key with Exponet 3
