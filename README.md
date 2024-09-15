@@ -1,10 +1,14 @@
-# I build me some usefull Python files for analysis and reengineering!
+# I build me some usefull files for analysis and reengineering!
 
-- ISO-TP_Decoder.py - to parse CAN Logs from PEAK Can .trc files into better readable ISO-TP format
+- decompress_lzss - decompress Bin / Text File from LZSS
 
-- RSA_1024_3.py - generate some RSA1024 key with Exponet 3
+- compress_lzss - compress Bin / Text File into LZSS 
 
-All files are compiles for Windows in bin folder, too.
+- ISO-TP_Decoder - to parse CAN Logs from PEAK Can .trc files into better readable ISO-TP format
+
+- RSA_1024_3 - generate some RSA1024 key with Exponet 3
+
+All files are compiled for Windows!
   
 More are comming soon... it is done when it done!
 
