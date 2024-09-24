@@ -8,6 +8,8 @@
 
 - RSA_1024_3 - generate some RSA1024 key with Exponet 3
 
+- XOR_Calc - Calculate address ranges with XOR
+
 All files are compiled for Windows!
   
 More are comming soon... it is done when it done!
