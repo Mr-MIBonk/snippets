@@ -1,8 +1,12 @@
 # I build me some usefull files for analysis and reengineering!
 
-- decompress_lzss - decompress Bin / Text File from LZSS
+- lzss_decompress - decompress Bin / Text File from LZSS
 
-- compress_lzss - compress Bin / Text File into LZSS 
+- lzss_compress - compress Bin / Text File into LZSS
+
+- frf_decrypt - decrypt frf files
+
+- frf_encrypt - encrypt frf files
 
 - ISO-TP_Decoder - to parse CAN Logs from PEAK Can .trc files into better readable ISO-TP format
 
